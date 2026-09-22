@@ -8,6 +8,7 @@ public class ReverseLetter {
         while(left < right){
             while(left < right && !Character.isLetter(chars[left])){
                 left++;
+                //Вот здесь допустим переделай
             }
             while(left < right && !Character.isLetter(chars[right])){
                 right--;
