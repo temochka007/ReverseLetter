@@ -1,8 +1,12 @@
 package BaseTraning;
 
-public class ReverseLetter {
+public class Main {
     public static void main(String[] args) {
         char[] chars = "J@va the be$t!123".toCharArray();
+        String revers = ReverseLetter(chars);
+        System.out.println(revers);
+    }
+    public static String ReverseLetter(char[] chars){
         int left = 0;
         int right = chars.length - 1;
         while(left < right){
@@ -18,6 +22,6 @@ public class ReverseLetter {
             left++;
             right--;
         }
-        System.out.println(new String(chars));
+        return new String((chars));
     }
 }
