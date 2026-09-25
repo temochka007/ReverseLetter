@@ -2,7 +2,7 @@ package com.example.util;
 
 public class ReverseLetter {
 
-    public static String ReverseLetter(char[] chars){
+    public static String reverseLetter(char[] chars){
         int left = 0;
         int right = chars.length - 1;
         while(left < right){
