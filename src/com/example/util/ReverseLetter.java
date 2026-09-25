@@ -1,11 +1,8 @@
-package BaseTraning;
+package com.example.util;
 
 public class ReverseLetter {
-    char[] text;
-    public ReverseLetter(char[] text){
-        this.text = text;
-    }
-    public String ReverseLetter(char[] chars){
+
+    public static String ReverseLetter(char[] chars){
         int left = 0;
         int right = chars.length - 1;
         while(left < right){
@@ -22,11 +19,5 @@ public class ReverseLetter {
             right--;
         }
         return new String(chars);
-    }
-    @Override
-    public String toString() {
-        return "ReverseLetter{" +
-                "text='" + text + '\'' +
-                '}';
     }
 }
